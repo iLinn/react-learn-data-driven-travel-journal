@@ -1,20 +1,23 @@
 import reactLogo from '/src/assets/react.svg';
+import globeLogo from '/src/assets/globe.svg';
 import './Header.css';
 
 function Header() {
   return (
     <header>
-      <a href="https://react.dev" target="_blank" className="logo-link">
-        <img src={reactLogo} className="logo react" alt="React logo" />
-        <span>React</span>
-      </a> 
-      <nav>
-        <ul className="nav-list">
-          <li>Career</li>
-          <li>About</li>
-          <li>Contacts</li>
-        </ul>
-      </nav>
+      <div>
+        <a href="https://react.dev" target="_blank" className="logo-link flex-grow-1">
+          <img src={reactLogo} className="shadow react-logo" alt="React logo" />
+          <span>React</span>
+        </a>
+      </div>
+      <div>
+        <a href="" target="_blank" className="icon-link shadow flex-grow-1">
+          <img src={globeLogo} className="icon globe" alt="globe logo" />
+          <span>my travel journal</span>
+        </a>
+      </div>
+      <span className="flex-basis-inherit"></span>
     </header>
   );
 }

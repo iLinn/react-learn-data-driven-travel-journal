@@ -44,7 +44,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -61,7 +61,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 main {
   padding: 1em 2em;
@@ -80,14 +80,12 @@ main {
   }
 }
 
-.logo {
+.shadow:hover {
   will-change: filter;
   transition: filter 300ms;
-}
-.logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
+.shadow.react-logo:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
@@ -114,7 +112,15 @@ main {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  header .logo {
+  header .react-logo {
     animation: logo-spin infinite 20s linear;
   }
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-basis-inherit {
+  flex-basis: inherit;
 }

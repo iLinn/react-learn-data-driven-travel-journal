@@ -4,9 +4,9 @@ import './index.css'
 import Header from './components/header/Header';
 import MainContent from './components/main-component/Main';
 import Footer from './components/footer/Footer';
-// import App from './components/app/App.tsx'
 
-createRoot(document.getElementById('root')!).render(
+const root = createRoot(document.getElementById('root')!);
+root.render(
   <StrictMode>
     <Header />
     <MainContent />

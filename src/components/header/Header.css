@@ -7,7 +7,7 @@ header {
     justify-content: space-between;
     border-bottom: 1rem solid black;
 
-    .logo {
+    .react-logo {
         width: 50px;
     }
 
@@ -29,16 +29,40 @@ header {
             }
         }
     }
-}
 
-.nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-
-    li {
-        margin-left: 1rem;
+    .icon-link {
+        display: flex;
+        place-items: center;
+        /* transition: color 100ms ease-in; */
         cursor: pointer;
-        font-size: 1.2rem;
+
+        /* span {
+            color: #000;
+        } */
+
+        /* &:hover {
+            color: #00abca;
+        } */
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        margin-left: 1rem;
+        margin-right: .4rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .icon-link {
+            span {
+                color: #ffffff;
+            }
+        }
+
+        .icon {
+            &.globe {
+                filter: invert(1);
+            }
+        }
     }
 }
