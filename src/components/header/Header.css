@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    max-height: 4rem;
+    flex: 1 1 10%;
+    align-items: center;
+    padding: 0 1rem;
+    justify-content: space-between;
+    border-bottom: 1rem solid black;
+
+    .logo {
+        width: 50px;
+    }
+
+    .logo-link {
+        display: flex;
+        place-items: center;
+        transition: color 100ms ease-in;
+        cursor: pointer;
+
+        span {
+            font-weight: bolder;
+            font-size: 1.6rem;
+            color: #00d8ff;
+            padding-left: .5rem;
+            vertical-align: middle;
+
+            &:hover {
+                color: #00abca;
+            }
+        }
+    }
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+        margin-left: 1rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+}
