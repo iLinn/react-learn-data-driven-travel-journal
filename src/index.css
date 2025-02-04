@@ -117,10 +117,27 @@ main {
   }
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
 .flex-grow-1 {
   flex-grow: 1;
 }
 
 .flex-basis-inherit {
   flex-basis: inherit;
+}
+
+.fw-bolder {
+  font-weight: bolder;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
 }

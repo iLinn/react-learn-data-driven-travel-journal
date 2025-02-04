@@ -1,6 +1,8 @@
 header {
     display: flex;
-    max-height: 4rem;
+    /* background-color: #F55A5A; */
+    max-height: 3.5rem;
+    min-height: 3.5rem;
     flex: 1 1 10%;
     align-items: center;
     padding: 0 1rem;
@@ -18,7 +20,6 @@ header {
         cursor: pointer;
 
         span {
-            font-weight: bolder;
             font-size: 1.6rem;
             color: #00d8ff;
             padding-left: .5rem;
@@ -36,13 +37,10 @@ header {
         /* transition: color 100ms ease-in; */
         cursor: pointer;
 
-        /* span {
-            color: #000;
-        } */
-
-        /* &:hover {
-            color: #00abca;
-        } */
+        span {
+            font-size: 1.5rem;
+            color: #000000;
+        }
     }
 
     .icon {
