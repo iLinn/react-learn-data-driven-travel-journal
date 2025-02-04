@@ -1,0 +1,49 @@
+.marker-icon:before {
+  padding-left: 1.2rem;
+  content: '';
+  background-image: url('src/assets/marker-icon.svg');
+  background-repeat: no-repeat;
+  background-size: 1rem;
+}
+
+.card-image-container {
+  width: 125px;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 1rem;
+  flex-shrink: 0;
+
+  .card-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+
+.card {
+  .card-content {
+    span.place {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      margin-right: 0.8rem;
+      letter-spacing: 1.2px;
+    }
+
+    a.map-link {
+      color: #2B283A;
+      font-size: 0.7rem;
+      text-decoration: underline;
+
+      &:visited {
+        color: #918E9B;
+      }
+    }
+  }
+
+  h2, h4, p {
+    margin: 0.5rem 0;
+  }
+
+
+}
