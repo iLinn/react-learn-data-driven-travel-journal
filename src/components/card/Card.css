@@ -14,6 +14,8 @@
 }
 
 .card {
+  max-width: 90%;
+
   .card-content {
     span.place {
       text-transform: uppercase;
