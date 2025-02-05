@@ -1,16 +1,5 @@
+import { CardProps } from '../../interface/CardProps';
 import './Card.css';
-
-interface CardProps {
-  img: {
-    src: string;
-    alt: string;
-  };
-  place: string;
-  mapLink: string;
-  title: string;
-  dates: string;
-  description: string;
-};
 
 export default function Card(props: CardProps) {
   const { img, place, mapLink, title, dates, description } = props;
