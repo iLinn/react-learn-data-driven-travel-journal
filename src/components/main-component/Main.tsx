@@ -3,15 +3,13 @@ import Card from '../card/Card';
 import { TRAVEL_DATA } from '../../data/travel-data.const';
 
 function MainContent() {
-  const cardsElements = TRAVEL_DATA.map((travel) => (
+  const cardsElements = TRAVEL_DATA.map((travelData) => (
     <Card
-      key={travel.id}
-      img={travel.img}
-      place={travel.place}
-      mapLink={travel.mapLink}
-      title={travel.title}
-      dates={travel.dates}
-      description={travel.description}
+      key={travelData.id}
+      props={{
+        ...travelData,
+        mapLink: travelData.map_link,
+      }}
     />
   ));
 
