@@ -1,7 +1,7 @@
 import { CardProps } from '../../interface/CardProps';
 import './Card.css';
 
-export default function Card({ props }: { props: CardProps}) {
+export default function Card(props: CardProps) {
   const { img, place, mapLink, title, dates, description } = props;
   return (
     <article className="card flex-row gap-1 mb-1">

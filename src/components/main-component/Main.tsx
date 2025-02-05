@@ -6,7 +6,7 @@ function MainContent() {
   const cardsElements = TRAVEL_DATA.map((travelData) => (
     <Card
       key={travelData.id}
-      props={{
+      {...{
         ...travelData,
         mapLink: travelData.map_link,
       }}
